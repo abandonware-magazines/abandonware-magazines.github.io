@@ -28,7 +28,8 @@
                             המגזינים
                           </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            {% for magazine in site.data.magazines %}
+                            {% assign magazines = site.data.magazines | sort: 'name' %}
+                            {% for magazine in magazines %}
                             <a class="dropdown-item" href="/magazines/{{ magazine.id }}.html">{{ magazine.name }}</a>
                             {% endfor %}
                         </div>

@@ -510,88 +510,6 @@
         ]
     },
     {
-        "from_url": "https://sites.google.com/site/abandonwaremagazines/magazines/ydywt-hrwnwt---mwsp-yntrnt",
-        "name": "ידיעות אחרונות - מוסף אינטרנט",
-        "id": "internet_yediot",
-        "issues": [
-            {
-                "issue": "15 באפריל 2001",
-                "link": "https://drive.google.com/open?id=0B0Jd6Z6xFGk4bnIydDBVUklqRW8",
-                "scanned_by": "Asaf"
-            },
-            {
-                "issue": "5 באוגוסט 2001",
-                "link": "https://drive.google.com/open?id=0B0Jd6Z6xFGk4ZmtYODBPdU5JcUE",
-                "scanned_by": "Asaf"
-            },
-            {
-                "issue": "26 באוגוסט 2001",
-                "link": "https://drive.google.com/open?id=0B0Jd6Z6xFGk4OU9WTHhndEQ4RmM",
-                "scanned_by": "Asaf"
-            },
-            {
-                "issue": "9 בספטמבר 2001",
-                "link": "https://drive.google.com/open?id=0B0Jd6Z6xFGk4dDQ0T3FfOUo2YWs",
-                "scanned_by": "Asaf"
-            },
-            {
-                "issue": "4 בנובמבר 2001",
-                "link": "https://drive.google.com/open?id=0B0Jd6Z6xFGk4dHZKZmhFaUlrZmM",
-                "scanned_by": "Asaf"
-            },
-            {
-                "issue": "11 בנובמבר 2001",
-                "link": "https://drive.google.com/open?id=0B0Jd6Z6xFGk4Ym1leDczR0pidnc",
-                "scanned_by": "Asaf"
-            },
-            {
-                "issue": "2 בדצמבר 2001",
-                "link": "https://drive.google.com/open?id=0B0Jd6Z6xFGk4VF9icUVERjBNeTA",
-                "scanned_by": "Asaf"
-            },
-            {
-                "issue": "17 בפברואר 2002",
-                "link": "https://drive.google.com/open?id=0B0Jd6Z6xFGk4VUtyRG51SDV0czg",
-                "scanned_by": "Asaf"
-            },
-            {
-                "issue": "1 ביולי 2002",
-                "link": "https://drive.google.com/open?id=0B0Jd6Z6xFGk4UWpZQjgxMDNKWWM",
-                "scanned_by": "Asaf"
-            },
-            {
-                "issue": "7 ביולי 2002",
-                "link": "https://drive.google.com/open?id=0B0Jd6Z6xFGk4cmYyQll4bDZ5LUU",
-                "scanned_by": "Asaf"
-            },
-            {
-                "issue": "17 בספטמבר 2002",
-                "link": "https://drive.google.com/open?id=0B0Jd6Z6xFGk4dDVUWVpjVnRLWkk",
-                "scanned_by": "Asaf"
-            },
-            {
-                "issue": "6 באוקטובר 2002",
-                "link": "https://drive.google.com/open?id=0B0Jd6Z6xFGk4cTRLSnU2cXFMQXc",
-                "scanned_by": "Asaf"
-            },
-            {
-                "issue": "3 בנובמבר 2002",
-                "link": "https://drive.google.com/open?id=0B0Jd6Z6xFGk4REJGQUlzYThxUVU",
-                "scanned_by": "Asaf"
-            },
-            {
-                "issue": "27 ביולי 2003",
-                "link": "https://drive.google.com/open?id=0B0Jd6Z6xFGk4WVluVHpQYnBqZmc",
-                "scanned_by": "Asaf"
-            },
-            {
-                "issue": "31 באוגוסט 2003",
-                "link": "https://drive.google.com/open?id=0B0Jd6Z6xFGk4dV90VWw0aXo5UFU",
-                "scanned_by": "Asaf"
-            }
-        ]
-    },
-    {
         "from_url": "https://sites.google.com/site/abandonwaremagazines/magazines/zombit",
         "name": "זומביט",
         "id": "zombit",
@@ -725,11 +643,6 @@
                 "issue": "34",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7dTF5d0lMeFljT2s/edit?usp=sharing",
                 "scanned_by": "Yaniv"
-            },
-            {
-                "issue": "26",
-                "link": "https://docs.google.com/open?id=0B7AcfXJGUxB7VW51NXMxN2JRaXlwOEt3a3E2SGZTZw",
-                "scanned_by": "Ingsoc"
             }
         ]
     },
