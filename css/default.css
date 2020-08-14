@@ -1,0 +1,41 @@
+/*.cover-photo {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center; 
+    height: calc(100vh - 200px);
+}*/
+
+.navbar {
+    z-index: 999;
+}
+
+.bg-cover {
+
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('/images/CoverPhotoLarge.png');
+    min-height: 100vh;
+    position: absolute; 
+    top: 0;
+    width: 100%;
+}
+
+.rounded-corners {
+    border-radius:.90rem !important
+}
+
+.vertical-center {
+    min-height: 95%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 95vh; /* These two lines are counted as one :-)       */
+
+    display: flex;
+    align-items: center;
+}
+
+#main-box {
+    background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)); 
+    padding: 20px; 
+    margin: 100px 0 30px 0;
+}
