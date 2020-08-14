@@ -13,56 +13,51 @@
         <title>{{ site.title }} | {{ page.title }}</title>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="/">{{ site.title }}</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/">דף הבית</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            המגזינים
-                          </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            {% assign magazines = site.data.magazines | sort: 'name' %}
-                            {% for magazine in magazines %}
-                            <a class="dropdown-item" href="/magazines/{{ magazine.id }}.html">{{ magazine.name }}</a>
-                            {% endfor %}
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">יצירת קשר</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">קישורים</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">קרדיט</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">תרומה</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <wrapper class="d-flex flex-column">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="/">{{ site.title }}</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/">דף הבית</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                המגזינים
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                {% assign magazines = site.data.magazines | sort: 'name' %}
+                                {% for magazine in magazines %}
+                                <a class="dropdown-item" href="/magazines/{{ magazine.id }}.html">{{ magazine.name }}</a>
+                                {% endfor %}
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact.html">תרומה / יצירת קשר</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/links.html">קישורים</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
 
-        <main>
-            {{ content }}
-        </main>
+            <!--main-->
+                {{ content }}
+            <!--/main-->
 
-        <!--
-        <footer class="page-footer font-small bg-dark">
-            <div class="text-center py-3 text-secondary">©  
-              <a href="/" class="text-light"> {{ site.title }}</a>
-            </div>
-        </footer>
-        -->
-        <!-- Page Wrapper -->
-    
+            <!--
+            <footer class="page-footer font-small bg-dark">
+                <div class="text-center py-3 text-secondary">©  
+                <a href="/" class="text-light"> {{ site.title }}</a>
+                </div>
+            </footer>
+            -->
+            <!-- Page Wrapper -->
+        </wrapper>
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -70,5 +65,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <!--script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script-->
         <script src="https://cdn.rtlcss.com/bootstrap/v4.0.0/js/bootstrap.min.js" integrity="sha384-54+cucJ4QbVb99v8dcttx/0JRx4FHMmhOWi4W+xrXpKcsKQodCBwAvu3xxkZAwsH" crossorigin="anonymous"></script>
+        <script src="/js/main.js"></script>
     </body>
 </html>
