@@ -2,9 +2,10 @@
     {
         "from_url": "https://sites.google.com/site/abandonwaremagazines/magazines/internetworld",
         "name": "אינטרנט וורלד",
+        "id": "internetworld",
         "issues": [
             {
-                "issue": "06",
+                "issue": "6",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7dGM1eU9tTk11X2M/edit?usp=sharing",
                 "scanned_by": "Yaniv"
             },
@@ -83,49 +84,50 @@
     {
         "from_url": "https://sites.google.com/site/abandonwaremagazines/magazines/click",
         "name": "קליק",
+        "id": "click",
         "issues": [
             {
-                "issue": "01",
+                "issue": "1",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7TU9UMkw0cThXRW8/view?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "02",
+                "issue": "2",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7VWI3elV1aE9MdTg/view?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "03",
+                "issue": "3",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7OFJxb1FqQ2xnLWc/view?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "04",
+                "issue": "4",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7aW13RmRVM3Z4T0U/view?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "05",
+                "issue": "5",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7cXlNc3ViczU1OG8/view?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "06",
+                "issue": "6",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7QThrQUNYQW9nRkU/view?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "07",
+                "issue": "7",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7bHl6eWh4TGxzbFE/view?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "08",
+                "issue": "8",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7MnBPeHBQSEpybW8/view?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "09",
+                "issue": "9",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7aEhtQTM1MkNPV2M/view?usp=sharing",
                 "scanned_by": "Yaniv"
             },
@@ -139,9 +141,10 @@
     {
         "from_url": "https://sites.google.com/site/abandonwaremagazines/magazines/freak",
         "name": "פריק",
+        "id": "freak",
         "issues": [
             {
-                "issue": "06",
+                "issue": "6",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7Vk4xc3VFb1FxeWc/view?usp=sharing",
                 "scanned_by": "RonenK"
             },
@@ -415,19 +418,20 @@
     {
         "from_url": "https://sites.google.com/site/abandonwaremagazines/magazines/netmagazine",
         "name": "נט מגזין",
+        "id": "netmagazine",
         "issues": [
             {
-                "issue": "02",
+                "issue": "2",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7OGZLU0Fqa0ZGODQ/edit?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "06",
+                "issue": "6",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7VnQwZUVHRllQcHc/edit?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "08",
+                "issue": "8",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7dGc1Y3F4eDVjQnc/edit?usp=sharing",
                 "scanned_by": "Yaniv"
             },
@@ -481,6 +485,7 @@
     {
         "from_url": "https://sites.google.com/site/abandonwaremagazines/magazines/compfun",
         "name": "מחשבים וכיף",
+        "id": "compfun",
         "issues": [
             {
                 "issue": "53",
@@ -507,6 +512,7 @@
     {
         "from_url": "https://sites.google.com/site/abandonwaremagazines/magazines/ydywt-hrwnwt---mwsp-yntrnt",
         "name": "ידיעות אחרונות - מוסף אינטרנט",
+        "id": "internet_yediot",
         "issues": [
             {
                 "issue": "15 באפריל 2001",
@@ -588,29 +594,30 @@
     {
         "from_url": "https://sites.google.com/site/abandonwaremagazines/magazines/zombit",
         "name": "זומביט",
+        "id": "zombit",
         "issues": [
             {
-                "issue": "01",
+                "issue": "1",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7am5jZW1OcEpSQUk/view?usp=sharing",
                 "scanned_by": "Neora"
             },
             {
-                "issue": "03",
+                "issue": "3",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7NV9kVDRhNllRclk/view?usp=sharing",
                 "scanned_by": "Neora"
             },
             {
-                "issue": "07",
+                "issue": "7",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7blZzdG9zXzJ0YkE/view?usp=sharing",
                 "scanned_by": "Neora"
             },
             {
-                "issue": "08",
+                "issue": "8",
                 "link": "https://docs.google.com/open?id=0B7AcfXJGUxB7eWs0TVdCRHdRVHVnYzVvT2dLYmhnUQ",
                 "scanned_by": "Ingsoc"
             },
             {
-                "issue": "09",
+                "issue": "9",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7a0pfdEVsczlJbGs/view?usp=sharing",
                 "scanned_by": "Neora"
             },
@@ -729,499 +736,500 @@
     {
         "from_url": "https://sites.google.com/site/abandonwaremagazines/magazines/wiz",
         "name": "וויז",
+        "id": "wiz",
         "issues": [
             {
-                "issue": "001",
+                "issue": "1",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7RTJ4NWFKYnNtNVE/edit?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "002",
+                "issue": "2",
                 "link": "https://docs.google.com/open?id=0B7AcfXJGUxB7Y3RYalhiYlJSQ09HVTdoX0p6S3lVZw",
                 "scanned_by": "Omemo.co.il"
             },
             {
-                "issue": "003",
+                "issue": "3",
                 "link": "https://drive.google.com/open?id=1stPgHY329UdInughoND5aQF7JOLHJ0PU",
                 "scanned_by": "Rafael"
             },
             {
-                "issue": "004",
+                "issue": "4",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7NTNsZU8yV2V5SkE/view?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "005",
+                "issue": "5",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7enIzWWtzSE03Zjg/view?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "006",
+                "issue": "6",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7Zjd2SXdabHNfcm8/view?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "007",
+                "issue": "7",
                 "link": "https://docs.google.com/open?id=0B7AcfXJGUxB7TWJvcVU0blZRZmV5UzRYVk4yb3hSQQ",
                 "scanned_by": "Omemo.co.il"
             },
             {
-                "issue": "008",
+                "issue": "8",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7NUhIUFhEdm5xUkk/view?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "009",
+                "issue": "9",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7aWVoNmM2UEpzbVE/view?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "010",
+                "issue": "10",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7UU9BZENBSlZkdlE/view?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "011",
+                "issue": "11",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7Q3I1V2N4Zy00TTQ/view?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "012",
+                "issue": "12",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7ZWJtMWRibnE5czg/view?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "013",
+                "issue": "13",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7N3d3aW5TUTNfOWc/view?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "014",
+                "issue": "14",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7WWVEOE8xNjZVV28/view?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "015",
+                "issue": "15",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7eHBHSUVFZUxmMWM/view?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "016",
+                "issue": "16",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7UmlSNWg1ZC1RQXc/view?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "017",
+                "issue": "17",
                 "link": "https://drive.google.com/open?id=1snM3C-3ZhAm6VHjRh_xqrkiW89E5QDWm",
                 "scanned_by": "Rafael"
             },
             {
-                "issue": "018",
+                "issue": "18",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7RWpTUmtiMUZCUFE/view?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "019",
+                "issue": "19",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7bFNvdklfYVZ6YWc/view?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "020",
+                "issue": "20",
                 "link": "https://docs.google.com/open?id=0B7AcfXJGUxB7bjM2b3BKT0lTNjJONFRwd0ZTNUJEUQ",
                 "scanned_by": "gushacha"
             },
             {
-                "issue": "021",
+                "issue": "21",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7ekhPLVh5bklXbWc/view?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "022",
+                "issue": "22",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7dG5XOXZMeWdRajQ/view?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "023",
+                "issue": "23",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7RngxMExCX3VodG8/view?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "024",
+                "issue": "24",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7NFRQX1pPYWYzT2s/view?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "025",
+                "issue": "25",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7emJUcEIyNExyaXc/view?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "026",
+                "issue": "26",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7SUdRWFFlcmZpWUE/view?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "027",
+                "issue": "27",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7S0xKNDBObk5GV00/view?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "028",
+                "issue": "28",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7M3QzY2pPR3U0dDg/view?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "029",
+                "issue": "29",
                 "link": "https://docs.google.com/open?id=0B7AcfXJGUxB7YURhTEN6MGdSR3VmcDFLYS1hT290QQ",
                 "scanned_by": "gushacha"
             },
             {
-                "issue": "030",
+                "issue": "30",
                 "link": "https://docs.google.com/open?id=0B7AcfXJGUxB7bzdDVG9KeWVSd0c5aVVUOTRGYlV0Zw",
                 "scanned_by": "gushacha"
             },
             {
-                "issue": "031",
+                "issue": "31",
                 "link": "https://docs.google.com/open?id=0B7AcfXJGUxB7OUxZOHNNQ3FUdnViNFJMZVhRcHhpUQ",
                 "scanned_by": "gushacha"
             },
             {
-                "issue": "032",
+                "issue": "32",
                 "link": "https://docs.google.com/open?id=0B7AcfXJGUxB7Y2JtcWgwNUFTbUNSZXIwZWc0SFJYUQ",
                 "scanned_by": "gushacha"
             },
             {
-                "issue": "033",
+                "issue": "33",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7MWNTU1hkTnB4UFU/view?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "034",
+                "issue": "34",
                 "link": "https://docs.google.com/open?id=0B7AcfXJGUxB7SlVXbTZmS0hTUENWXzRTdTJLRENjZw",
                 "scanned_by": "gushacha"
             },
             {
-                "issue": "035",
+                "issue": "35",
                 "link": "https://docs.google.com/open?id=0B7AcfXJGUxB7SmVjM25RVnJSM3FTN0lTMVZPcXctQQ",
                 "scanned_by": "gushacha"
             },
             {
-                "issue": "036",
+                "issue": "36",
                 "link": "https://docs.google.com/open?id=0B7AcfXJGUxB7Vm9HZ2Z4RjdSTk9qUGppNXVkVWt6UQ",
                 "scanned_by": "gushacha"
             },
             {
-                "issue": "037",
+                "issue": "37",
                 "link": "https://docs.google.com/open?id=0B7AcfXJGUxB7dXVESUczMGxRcjZCMXY4LVBWMmI1UQ",
                 "scanned_by": "gushacha"
             },
             {
-                "issue": "038",
+                "issue": "38",
                 "link": "https://drive.google.com/open?id=1qF9t5QMz6JB3k4YJ0KpgUhEcrw4cvahS",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "039",
+                "issue": "39",
                 "link": "https://docs.google.com/open?id=0B7AcfXJGUxB7dXBVYzl2em1RRENOeC1BRTA2MEhJdw",
                 "scanned_by": "gushacha"
             },
             {
-                "issue": "040",
+                "issue": "40",
                 "link": "https://docs.google.com/open?id=0B7AcfXJGUxB7anN1X2xNMmRTZGV1TVZPdko4Tlh0dw",
                 "scanned_by": "gushacha"
             },
             {
-                "issue": "041",
+                "issue": "41",
                 "link": "https://docs.google.com/open?id=0B7AcfXJGUxB7TXNqeFJ1T1ZRTW1wLWFEckVxMEQwQQ",
                 "scanned_by": "gushacha"
             },
             {
-                "issue": "042",
+                "issue": "42",
                 "link": "https://drive.google.com/open?id=1_Mf086uq6b1APHrigCJR1FdHMyjICmmw",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "043",
+                "issue": "43",
                 "link": "https://drive.google.com/open?id=1_974qkTs759oYdf2oxxaOc11d31m2vZa",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "044",
+                "issue": "44",
                 "link": "https://docs.google.com/open?id=0B7AcfXJGUxB7cTY4TXdxVERSOEtlLS1rTkhCOTVOdw",
                 "scanned_by": "gushacha"
             },
             {
-                "issue": "045",
+                "issue": "45",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7a2YyeDNCZGxJbjQ/edit?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "046",
+                "issue": "46",
                 "link": "https://drive.google.com/open?id=16eSuXI580rFZH-tSrm2tMI8oCPy-VMuC",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "047",
+                "issue": "47",
                 "link": "https://drive.google.com/open?id=1bqghLQeA_VW3EXtbM_silJtHO1YtKLhF",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "048",
+                "issue": "48",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7aVQ3cmFURTdUR1U/edit?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "049",
+                "issue": "49",
                 "link": "https://drive.google.com/open?id=1PpjunUufhO2Xv1zdxNRoL-TWJpcxYQNZ",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "050",
+                "issue": "50",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7bk5mN3hvUjVkbTQ/edit?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "051",
+                "issue": "51",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7b1Q5UmlYd3ctelU/edit?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "052",
+                "issue": "52",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7bkYybTJfNmJScnM/edit?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "053",
+                "issue": "53",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7ZjBEQXV2WXNrVEk/edit?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "054",
+                "issue": "54",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7VmhRejNMRnBUZGs/edit?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "055",
+                "issue": "55",
                 "link": "https://drive.google.com/open?id=1v-yamLHxM68IC0GMdtjd1eY1HxEyoqGl",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "056",
+                "issue": "56",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7Yl9XanVXNGZFVUE/edit?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "057",
+                "issue": "57",
                 "link": "https://drive.google.com/open?id=1RnhBBN9NCh02eiIgCKIPZH4wX1NiSgXO",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "058",
+                "issue": "58",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7Qi1Ga00yd0ZQWjQ/edit?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "059",
+                "issue": "59",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7NXM1dm5lSEdTWlU/edit?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "060",
+                "issue": "60",
                 "link": "https://drive.google.com/open?id=1OwlDy2KubKBvqPwPfXzoha_GtxoPepjW",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "061",
+                "issue": "61",
                 "link": "https://drive.google.com/open?id=1gjVzzbvPfBUwVcB4joiI_Lmhq1U7ZuFu",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "062",
+                "issue": "62",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7RmQyREttTzFocXc/edit?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "063",
+                "issue": "63",
                 "link": "https://drive.google.com/open?id=1lDOJK5cf4co4zenqI0YA4Tlj4g549FmK",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "064",
+                "issue": "64",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7bEdjbmhDaUxMWHM/edit?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "065",
+                "issue": "65",
                 "link": "https://drive.google.com/open?id=1e9U9u18BFuuVzkUdHmO2crtO3FZ_8uZA",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "066",
+                "issue": "66",
                 "link": "https://drive.google.com/open?id=1bQx7oanPtCtXhmuKc71Ytz090c8tjnQq",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "067",
+                "issue": "67",
                 "link": "https://drive.google.com/open?id=1Mi0dD7MLwdCJTei-ooiMzc3p2Wot_4rL",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "068",
+                "issue": "68",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7bGJOdFdYVEtVNW8/edit?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "069",
+                "issue": "69",
                 "link": "https://drive.google.com/open?id=1Dv2L8yEGm7eMKm7eYTf_UEnD_iu3w3z6",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "070",
+                "issue": "70",
                 "link": "https://drive.google.com/open?id=1wU76eFWCUmnU52Mz04HSJ2JstnLU_6If",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "071",
+                "issue": "71",
                 "link": "https://drive.google.com/open?id=1ipwQfHaQ_VGuyhwyMnB220r0_dZpPO4P",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "072",
+                "issue": "72",
                 "link": "https://drive.google.com/open?id=18FtXHqG_y_pHtIlGDsnPt_6HrLMjH0hM",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "073",
+                "issue": "73",
                 "link": "https://drive.google.com/open?id=1oSKV-VTxoSW08G7kWgdRNusHJhTJzeJt",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "074",
+                "issue": "74",
                 "link": "https://docs.google.com/open?id=0B7AcfXJGUxB7OHU4MVhUSVRySUk",
                 "scanned_by": "Ingsoc"
             },
             {
-                "issue": "075",
+                "issue": "75",
                 "link": "https://drive.google.com/open?id=1vX-7ANBbcs583d8kuOFR2-ZpFkoFR7bo",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "076",
+                "issue": "76",
                 "link": "https://drive.google.com/open?id=1qFiyXwY6qhb7NkX4BTDisPLHETcpr3DU",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "077",
+                "issue": "77",
                 "link": "https://docs.google.com/open?id=0B7AcfXJGUxB7QzNlLWVnajhUZFNYMDFRR083cUg4dw",
                 "scanned_by": "gushacha"
             },
             {
-                "issue": "078",
+                "issue": "78",
                 "link": "https://docs.google.com/file/d/0B7AcfXJGUxB7WGd0OUhSWHlXUjA/edit?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "079",
+                "issue": "79",
                 "link": "https://docs.google.com/open?id=0B7AcfXJGUxB7UGwzT3l2MHpyZkk",
                 "scanned_by": "Ingsoc"
             },
             {
-                "issue": "080",
+                "issue": "80",
                 "link": "https://docs.google.com/file/d/0B7AcfXJGUxB7NXNvaVFka0VRVUE/edit?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "081",
+                "issue": "81",
                 "link": "https://docs.google.com/open?id=0B7AcfXJGUxB7TER6cXZhbURSeTA",
                 "scanned_by": "Ingsoc"
             },
             {
-                "issue": "082",
+                "issue": "82",
                 "link": "https://docs.google.com/file/d/0B7AcfXJGUxB7a1FidGUzY3NsSWM/edit?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "083",
+                "issue": "83",
                 "link": "https://docs.google.com/file/d/0B7AcfXJGUxB7NjFLUk1CUnlJVW8/edit?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "084",
+                "issue": "84",
                 "link": "https://docs.google.com/file/d/0B7AcfXJGUxB7NWxqTDhLRG5nMm8/edit?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "085",
+                "issue": "85",
                 "link": "https://docs.google.com/file/d/0B7AcfXJGUxB7bHRrUzdHLVpZYms/edit?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "086",
+                "issue": "86",
                 "link": "https://docs.google.com/file/d/0B7AcfXJGUxB7MVEyaHRuNy1ObDg/edit?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "087",
+                "issue": "87",
                 "link": "https://docs.google.com/file/d/0B7AcfXJGUxB7QmZRUnhJRUZ2a3M/edit?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "088",
+                "issue": "88",
                 "link": "https://docs.google.com/file/d/0B7AcfXJGUxB7TWhiSlhxSE5aTDQ/edit?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "089",
+                "issue": "89",
                 "link": "https://docs.google.com/file/d/0B7AcfXJGUxB7dl9mOGpCR3hMXzQ/edit?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "090",
+                "issue": "90",
                 "link": "https://docs.google.com/file/d/0B7AcfXJGUxB7blNXdUktcHVxSDg/edit?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "091",
+                "issue": "91",
                 "link": "https://docs.google.com/file/d/0B7AcfXJGUxB7RXNTMDFZTkhhb00/edit?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "092",
+                "issue": "92",
                 "link": "https://docs.google.com/file/d/0B7AcfXJGUxB7dDdnX1Q2bzN1cVU/edit?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "093",
+                "issue": "93",
                 "link": "https://docs.google.com/open?id=0B7AcfXJGUxB7blY0dVNTREFZVjQ",
                 "scanned_by": "Ingsoc"
             },
             {
-                "issue": "094",
+                "issue": "94",
                 "link": "https://docs.google.com/file/d/0B7AcfXJGUxB7OEYwNEtaMUc5Q2s/edit?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "095",
+                "issue": "95",
                 "link": "https://docs.google.com/open?id=0B7AcfXJGUxB7SUszazh6aGVEa00",
                 "scanned_by": "Ingsoc"
             },
             {
-                "issue": "096",
+                "issue": "96",
                 "link": "https://docs.google.com/open?id=0B7AcfXJGUxB7bWVkN2cyVXNIRDQ",
                 "scanned_by": "Ingsoc"
             },
             {
-                "issue": "097",
+                "issue": "97",
                 "link": "https://docs.google.com/file/d/0B7AcfXJGUxB7aXR5MjNRV3Yxd0E/edit?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "098",
+                "issue": "98",
                 "link": "https://docs.google.com/open?id=0B7AcfXJGUxB7OEk5U3ItNlBTQXc",
                 "scanned_by": "Ingsoc"
             },
             {
-                "issue": "099",
+                "issue": "99",
                 "link": "https://docs.google.com/file/d/0B7AcfXJGUxB7TnZydW1GbUhEVTA/edit?usp=sharing",
                 "scanned_by": "Yaniv"
             },
@@ -1365,24 +1373,25 @@
     {
         "from_url": "https://sites.google.com/site/abandonwaremagazines/magazines/hmhsb-ysy",
         "name": "המחשב אישי",
+        "id": "ThePC",
         "issues": [
             {
-                "issue": "04",
+                "issue": "4",
                 "link": "https://drive.google.com/file/d/1sSwcVVwWfcYq6mTC22Je-tweBMw9S2Ku/view?usp=sharing",
                 "scanned_by": "Asaf"
             },
             {
-                "issue": "05",
+                "issue": "5",
                 "link": "https://docs.google.com/file/d/0B7AcfXJGUxB7TF9uUkZSYVpURXc/edit?usp=sharing",
                 "scanned_by": "emh"
             },
             {
-                "issue": "06",
+                "issue": "6",
                 "link": "https://drive.google.com/file/d/1BGDf2TGy24jDqsc4yfYc7IJO-X2zF_ix/view?usp=sharing",
                 "scanned_by": "Asaf"
             },
             {
-                "issue": "09",
+                "issue": "9",
                 "link": "https://drive.google.com/file/d/1FSO_3cqeeh7fQpqe1HanBlgcxWYQ3D3X/view?usp=sharing",
                 "scanned_by": "Asaf"
             },
@@ -1461,14 +1470,15 @@
     {
         "from_url": "https://sites.google.com/site/abandonwaremagazines/magazines/gadgets",
         "name": "גאדג'טים",
+        "id": "gadgets",
         "issues": [
             {
-                "issue": "07",
+                "issue": "7",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7RlBiN19lb0hfa0E/edit?usp=sharing",
                 "scanned_by": "Yaniv"
             },
             {
-                "issue": "09",
+                "issue": "9",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7bTJOYUVtbHhYVWM/edit?usp=sharing",
                 "scanned_by": "Yaniv"
             },
@@ -1512,6 +1522,7 @@
     {
         "from_url": "https://sites.google.com/site/abandonwaremagazines/magazines/internetnow",
         "name": "אינטרנט עכשיו",
+        "id": "internetnow",
         "issues": [
             {
                 "issue": "31",

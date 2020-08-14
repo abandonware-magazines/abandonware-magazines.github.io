@@ -39,3 +39,12 @@
     padding: 20px; 
     margin: 100px auto 30px auto;
 }
+
+.magazine-card .card:hover {
+    background: #e0e0e0;
+}
+
+.magazine-card img {
+    height: 400px; 
+    width: 100%; 
+}
