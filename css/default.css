@@ -37,5 +37,5 @@
 #main-box {
     background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)); 
     padding: 20px; 
-    margin: 100px 0 30px 0;
+    margin: 100px auto 30px auto;
 }
