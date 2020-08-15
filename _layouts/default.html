@@ -31,7 +31,7 @@
         <title>{{ site.title }} | {{ page.title }}</title>
     </head>
     <body>
-        <wrapper class="d-flex flex-column">
+        <div class="wrapper d-flex flex-column">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <a class="navbar-brand" href="/">{{ site.title }}</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,19 +67,11 @@
                 </div>
             </nav>
 
-            <!--main-->
+            <!-- Content -->
                 {{ content }}
-            <!--/main-->
+            <!-- End Content -->
 
-            <!--
-            <footer class="page-footer font-small bg-dark">
-                <div class="text-center py-3 text-secondary">©  
-                <a href="/" class="text-light"> {{ site.title }}</a>
-                </div>
-            </footer>
-            -->
-            <!-- Page Wrapper -->
-        </wrapper>
+        </div>
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -55,7 +55,7 @@
     width: 100%; 
 }
 
-body, wrapper {
+body, .wrapper {
     min-height:100vh;
 }
 
