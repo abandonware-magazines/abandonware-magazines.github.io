@@ -1,21 +1,21 @@
-var baseFolderId = "0B7AcfXJGUxB7fnFTaUd4b0J5eUJ5LTZudTJ3OTNmbEVabHZwMTdpa1ROUWRGczFqSzZsUjQ";
-var apiKey = 'AIzaSyAtk7heHp6Vlm7QiivgRjz1Te2viYCXtVc';
-var debugEnabled = false;
+const baseFolderId = "0B7AcfXJGUxB7fnFTaUd4b0J5eUJ5LTZudTJ3OTNmbEVabHZwMTdpa1ROUWRGczFqSzZsUjQ";
+const apiKey = 'AIzaSyAtk7heHp6Vlm7QiivgRjz1Te2viYCXtVc';
+const debugEnabled = false;
 
-var QueryString = function () {
+const QueryString = function () {
     // This function is anonymous, is executed immediately and 
     // the return value is assigned to QueryString!
-    var query_string = {};
-    var query = window.location.search.substring(1);
-    var vars = query.split("&");
-    for (var i=0;i<vars.length;i++) {
-        var pair = vars[i].split("=");
+    const query_string = {};
+    const query = window.location.search.substring(1);
+    const vars = query.split("&");
+    for (let i=0; i<vars.length; i++) {
+        let pair = vars[i].split("=");
         // If first entry with this name
         if (typeof query_string[pair[0]] === "undefined") {
             query_string[pair[0]] = pair[1];
             // If second entry with this name
         } else if (typeof query_string[pair[0]] === "string") {
-            var arr = [ query_string[pair[0]], pair[1] ];
+            let arr = [ query_string[pair[0]], pair[1] ];
             query_string[pair[0]] = arr;
             // If third or later entry with this name
         } else {
@@ -30,7 +30,7 @@ function isNormalInteger(str) {
 }
 
 function isAlphaNumeric(str) {
-    var isNotAN = /[^a-zA-Z0-9]+/.test(str);
+    const isNotAN = /[^a-zA-Z0-9]+/.test(str);
     return !isNotAN;
 }
 
@@ -44,31 +44,43 @@ function zeroFill( number, width )
     return number + ""; // always return a string
 }
 
-function ShowImages()
+async function ShowImages()
 {
-    if (QueryString.m && QueryString.n && QueryString.pagenumbers)
+    try
     {
-        var MagName = QueryString.m;
-        var MagNum = QueryString.n;
-        var pageNumArr = QueryString.pagenumbers.split(",");
+        if (!QueryString.m || !QueryString.n || !QueryString.pagenumbers)
+        {
+            throw "Error: Query string missing!";
+        }
+
+        const MagName = QueryString.m;
+        let MagNum = QueryString.n;
+        const pageNumArr = QueryString.pagenumbers.split(",");
+
+        if (MagName.toLowerCase() in magazine_name_mapping)
+        {
+            const h1 = $("h1:first");
+            h1.html(h1.html() + " " + magazine_name_mapping[MagName.toLowerCase()])
+        }
+
         if (pageNumArr.length == 0)
         {
-            return;
+            throw "Error: Page array empty!";
         }
         
         if (!isAlphaNumeric(MagName))
         {
-            return;
+            throw "Error: Magazine name not alphanumeric!";
         }
         
         if (/^[0-9]+$/.test(MagNum) == false)
         {
-            return;
+            throw "Error: Magazine number not numeric!";
         }
         
         MagNum = zeroFill(MagNum, 3);
         
-        var imageInfo = {
+        const imageInfo = {
             magazineName: MagName,
             magazineNumber: MagNum,
             pageNumbers: $.map( pageNumArr, function( x, i ) {
@@ -82,18 +94,42 @@ function ShowImages()
                 }
             })
         };
-        
-        try 
+
+        const magazineFolders = await childFolderIdFromParentFolderId(baseFolderId, [imageInfo.magazineName]);
+        if ( (!magazineFolders) || (magazineFolders.length <= 0) || (!magazineFolders[0].id) )
         {
-            phase1_locateMagazineFolder(baseFolderId, imageInfo);
+            throw "Error: Invalid magazineFolders!";
         }
-        catch (err) 
+
+        const issueFolders = await childFolderIdFromParentFolderId(magazineFolders[0].id, [imageInfo.magazineNumber]);
+        if ( (!issueFolders) || (issueFolders.length <= 0) || (!issueFolders[0].id))
         {
-            debugLog(err);
-        } 
-        
-        
+            throw "Error: Invalid issueFolders!";
+        }
+
+        const images = await childFolderIdFromParentFolderId(issueFolders[0].id, imageInfo.pageNumbers);
+        $.each(images, function(index, image){
+            if (image.webContentLink)
+            {
+                $("#iviewer_wrapper").append('<div class="iviewer_viewer" id="iviewer_image' + index + '"></div>');
+                $("#iviewer_image" + index).iviewer({
+                    src: image.webContentLink,
+                    update_on_resize: false,
+                    zoom_animation: false,
+                    mousewheel: false,
+                    onMouseMove: function(ev, coords) { },
+                    onStartDrag: function(ev, coords) { return true; }, 
+                    onDrag: function(ev, coords) { },
+                    zoom_min: 5
+                });
+            }
+        });      
     }
+    catch (err) 
+    {
+        $("#iviewer_wrapper").html('<p class="text-danger">אירעה שגיאה!</p>')
+        debugLog(err);
+    }   
 };
 
 function debugLog(m)
@@ -105,84 +141,38 @@ function debugLog(m)
 }
 
 
-function childFolderIdFromParentFolderId(parentFolderId, nameArr, callback, userarg)
+async function childFolderIdFromParentFolderId(parentFolderId, nameArr)
 {
-    var request = gapi.client.drive.files.list({
+    const response = await gapi.client.drive.files.list({
         'q'       : "'" + parentFolderId + "' in parents",
         'fields'  : "files(id,name,webContentLink,webViewLink)",
         'pageSize': 200,
         'orderBy' : "name"
     });
-    request.execute(function(resp) 
+
+    debugLog(response);
+    const childIds = [];
+    //if (response && response.result && response.result.files && Array.isArray(response.result.files) && response.result.files.length > 0)
+    if (Array.isArray(response?.result?.files))
     {
-        debugLog(resp);
-        var childIds = [];
-        if (resp && resp.files && Array.isArray(resp.files) && resp.files.length > 0)
+        $.each(response.result.files, function() 
         {
-            $.each(resp.files, function() 
+            const that = this
+            if ($.inArray(that.name, nameArr) > -1)
             {
-                var that = this
-                if ($.inArray(that.name, nameArr) > -1)
-                {
-                    childIds.push(that);
-                }
-            });
-        }
-        
-        debugLog(childIds);
-        if (childIds.length == 0)
-        {
-            throw "Error: Could not find requested child!";
-        }
-        
-        callback(childIds, userarg);
-    });
-}
-
-function phase4_displayImages(images, imageInfo)
-{
-    debugLog("In displayImages()");
-    $.each(images, function(index, image){
-        if (image.webContentLink)
-        {
-            $("#iviewer_wrapper").append('<div class="viewer" id="image' + index + '"></div>');
-            $("#image" + index).iviewer({
-                src: image.webContentLink,
-                update_on_resize: false,
-                zoom_animation: false,
-                mousewheel: false,
-                onMouseMove: function(ev, coords) { },
-                onStartDrag: function(ev, coords) { return true; }, 
-                onDrag: function(ev, coords) { },
-                zoom_min: 5
-            });
-        }
-    });
-}
-
-function phase3_locateImages(issueFolders, imageInfo)
-{
-    debugLog("In locateImages()");
-    if (issueFolders && issueFolders.length > 0 && issueFolders[0].id)
-    {
-        childFolderIdFromParentFolderId(issueFolders[0].id, imageInfo.pageNumbers, phase4_displayImages, imageInfo);
+                childIds.push(that);
+            }
+        });
     }
-}
+    debugLog(childIds);
 
-function phase2_locateIssueFolder(magazineFolders, imageInfo)
-{
-    debugLog("In locateIssueFolder()");
-    if (magazineFolders && magazineFolders.length > 0 && magazineFolders[0].id)
+    if (childIds.length == 0)
     {
-        childFolderIdFromParentFolderId(magazineFolders[0].id, [imageInfo.magazineNumber], phase3_locateImages, imageInfo);
+        throw "Error: Could not find requested child!";
     }
-};
 
-function phase1_locateMagazineFolder(baseFolderId, imageInfo)
-{
-    debugLog("In locateMagazineFolder()");
-    childFolderIdFromParentFolderId(baseFolderId, [imageInfo.magazineName], phase2_locateIssueFolder, imageInfo);
-};
+    return childIds;
+}
 
 function loadGAPI()
 {

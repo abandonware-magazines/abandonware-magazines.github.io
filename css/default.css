@@ -63,7 +63,7 @@ body, .wrapper {
     flex:1 1 auto;
 }
 
-.viewer {
+.iviewer_viewer {
     width: 90%;
     height: 800px;
     border: 1px solid black;

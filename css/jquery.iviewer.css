@@ -1,7 +1,7 @@
-.viewer {
+.iviewer_viewer {
     -ms-touch-action: none;
 }
-.viewer img {
+.iviewer_viewer img {
     image-orientation: from-image;
 }
 .iviewer_common {
