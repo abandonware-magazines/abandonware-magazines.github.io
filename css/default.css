@@ -62,3 +62,15 @@ body, .wrapper {
 .flex-fill {
     flex:1 1 auto;
 }
+
+.viewer {
+    width: 90%;
+    height: 800px;
+    border: 1px solid black;
+    position: relative;
+    margin: 30px auto;
+}
+
+.iviewer_wrapper {
+    overflow: hidden;
+}

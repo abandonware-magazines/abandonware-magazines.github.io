@@ -1,0 +1,67 @@
+.viewer {
+    -ms-touch-action: none;
+}
+.viewer img {
+    image-orientation: from-image;
+}
+.iviewer_common {
+    position:absolute;
+    top: 10px;
+    border: 1px  solid #000;
+    height: 28px;
+    z-index: 5000;
+}
+
+.iviewer_cursor {
+    cursor: url(/images/iviewer/hand.cur) 6 8, pointer;
+}
+
+.iviewer_drag_cursor {
+    cursor: url(/images/iviewer/grab.cur) 6 8, pointer;
+}
+
+.iviewer_button {
+    width: 28px;
+    cursor: pointer;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.iviewer_zoom_in {
+    right: 20px;
+    background: url(/images/iviewer/iviewer.zoom_in.gif) center center no-repeat;
+}
+
+.iviewer_zoom_out {
+    right: 55px;
+    background: url(/images/iviewer/iviewer.zoom_out.gif) center center no-repeat;
+}
+
+.iviewer_zoom_zero {
+    right: 90px;
+    background: url(/images/iviewer/iviewer.zoom_zero.gif) center center no-repeat;
+}
+
+.iviewer_zoom_fit {
+    right: 125px;
+    background: url(/images/iviewer/iviewer.zoom_fit.gif) center center no-repeat;
+}
+
+.iviewer_zoom_status {
+    right: 160px;
+    font: 1em/28px Sans;
+    color: #000;
+    background-color: #fff;
+    text-align: center;
+    width: 60px;
+}
+
+.iviewer_rotate_left {
+    right: 227px;
+    background: #fff url(/images/iviewer/iviewer.rotate_left.png) center center no-repeat;
+}
+
+.iviewer_rotate_right {
+    right: 262px;
+    background: #fff url(/images/iviewer/iviewer.rotate_right.png) center center no-repeat;
+}
