@@ -20,7 +20,7 @@
     background-size: cover !important;
     background-repeat: no-repeat;
     background-position: center bottom;
-    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('/images/CoverPhotoLarge.png');
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('/images/CoverPhotoLargeLowRes.jpg');
     min-height: 100vh;
     position: absolute; 
     top: 0;
