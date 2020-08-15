@@ -21,10 +21,10 @@ layout: page
                         <img class="card-img-top" alt="{{ page.title }}, גליון {{ issue.issue }}"  
                         src="/images/magazines/{{page.magazine_id}}/{{page.magazine_id}}{{ issue.issue }}.jpg">
                     </a>
-                    <span class="card-body text-center">                        
+                    <div class="card-body text-center">                        
                         <p class="card-text"><a href="{{ issue.link }}" target="_BLANK">גליון {{ issue.issue }}</a></p>
                         <small class="text-muted">נסרק על ידי {{issue.scanned_by}}</small>
-                    </span>
+                    </div>
                 </div>
             </div>
             {% endfor %}
