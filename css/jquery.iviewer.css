@@ -65,3 +65,7 @@
     right: 262px;
     background: #fff url(/images/iviewer/iviewer.rotate_right.png) center center no-repeat;
 }
+
+#basic_page_container {
+    max-width: 100%;
+}
