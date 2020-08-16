@@ -74,3 +74,25 @@ body, .wrapper {
 .iviewer_wrapper {
     overflow: hidden;
 }
+
+.corner {
+    width: 0;
+    height: 0;
+    border-top: 40px solid #59de46;
+    border-bottom: 40px solid transparent;
+    border-left: 40px solid transparent;
+    position:absolute;
+    right:0;
+}
+
+.corner span {
+    position:absolute;
+    top: -39px;
+    width: 10px;
+    left: -15px;
+    text-align: center;
+    font-size: 16px;
+    font-family: arial;
+    font-weight: bold;
+    display:block;
+}
