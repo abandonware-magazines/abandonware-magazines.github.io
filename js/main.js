@@ -55,17 +55,24 @@ init_modules['magazines_init'] =  function() {
     const issue_prefix = "issue_";
     vhm = new ViewHistoryManager(magazine_id);
 
-    $("#magazines_container .magazine-card").click(function(){
-        const obj = $(this);
-        const issue_id = obj.attr('id').replace(issue_prefix, "");
-        if (!vhm.is_viewed(issue_id))
+    $("#magazines_container .magazine-card").mousedown(function(e) {
+        // We don't simply use "click" since it doesn't catch middle-click
+        switch(e.which)
         {
-            vhm.mark_as_viewed(issue_id);
-            setTimeout(function(){
-                obj.addClass("is_read");
-            }, 500);
-            
-        }
+            case 1: // Left Click
+            case 2: // Middle Click
+                const obj = $(this);
+                const issue_id = obj.attr('id').replace(issue_prefix, "");
+                if (!vhm.is_viewed(issue_id))
+                {
+                    vhm.mark_as_viewed(issue_id);
+                    setTimeout(function(){
+                        obj.addClass("is_read");
+                    }, 500);
+                    
+                }
+            break;
+        }        
     })
 
     for (const issue_id of vhm.viewed_issues) {
