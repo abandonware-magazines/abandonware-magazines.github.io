@@ -46,6 +46,13 @@ class ViewHistoryManager {
         }
     }
 
+    mark_as_not_viewed(issue_id) {
+        if (this.is_viewed(issue_id)) {
+            delete this.view_history[issue_id];
+            this.write_history();
+        }
+    }
+
     get viewed_issues() {
         return [...Object.keys(this.view_history)];
     }
@@ -73,11 +80,53 @@ init_modules['magazines_init'] =  function() {
                 }
             break;
         }        
-    })
+    });
+
+    $("#magazines_container .view_indicator").click(function(e){
+        e.preventDefault();
+    });
 
     for (const issue_id of vhm.viewed_issues) {
         $("#" + issue_prefix + issue_id).addClass("is_read");
     }
+
+    const mark_as_unread = function(issue_id) {
+        vhm.mark_as_not_viewed(issue_id);
+        setTimeout(function(){
+            $("#" + issue_prefix + issue_id).removeClass("is_read");
+        }, 100);
+    }
+
+    $('#magazines_container .view_indicator').popover({
+        title: 'מגזין זה נקרא בעבר', 
+        placement: 'top',
+        //content: '<div class="text-center"><a href="javascript:void(0);" onclick="javascript:mark_as_unread">[הסר סימון]</a></div>',
+        content: function() {
+            const issue_id = $(this).parents(".magazine-card:first").attr('id').replace(issue_prefix, "");
+            const a = $("<a href='javascript:void(0);'>[הסר סימון]</a>").click(function(){mark_as_unread(issue_id)});
+            const div = $("<div class='text-center'></div>").append(a);
+            return div;
+        },
+        
+        html: true,
+        trigger: "manual",
+        html: true,
+        animation: true
+    })
+    .on("mouseenter", function() {
+        var _this = this;
+        $(this).popover("show");
+        $(".popover").on("mouseleave", function() {
+            $(_this).popover('hide');
+        });
+    }).on("mouseleave", function() {
+        var _this = this;
+        setTimeout(function() {
+            if (!$(".popover:hover").length) {
+                $(_this).popover("hide");
+            }
+        }, 300);
+    });
 };
 
 if (typeof(js_module_init) != "undefined") {
