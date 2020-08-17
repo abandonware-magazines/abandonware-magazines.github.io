@@ -75,17 +75,19 @@ body, .wrapper {
     overflow: hidden;
 }
 
-.corner {
+.magazine_is_read {
     width: 0;
     height: 0;
     border-top: 40px solid #59de46;
     border-bottom: 40px solid transparent;
     border-left: 40px solid transparent;
-    position:absolute;
-    right:0;
+    position: absolute;
+    right: 0;
+    display: none;
 }
 
-.corner span {
+.magazine_is_read::after {
+    content: '✓';
     position:absolute;
     top: -39px;
     width: 10px;
@@ -94,5 +96,5 @@ body, .wrapper {
     font-size: 16px;
     font-family: arial;
     font-weight: bold;
-    display:block;
+    display: block;
 }

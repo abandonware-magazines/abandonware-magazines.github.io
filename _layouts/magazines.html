@@ -15,7 +15,7 @@ layout: page
         <div class="row">
             {% assign magazine = site.data.magazines | where:"id", page.magazine_id | first %}
             {% for issue in magazine.issues %}
-            <div class="col-md-4 mb-4 magazine-card">
+            <div class="col-md-4 mb-4 magazine-card" id="magazine_{{page.magazine_id}}_{{ issue.issue }}">
                 <div class="card mb-2 box-shadow">
                     <a href="{{ issue.link }}" target="_BLANK">
                         <img class="card-img-top" alt="{{ page.title }}, גליון {{ issue.issue }}"  
@@ -23,7 +23,7 @@ layout: page
                     </a>
                     
                     <div>
-                        <div class="corner"><span>✓</span></div>
+                        <div class="magazine_is_read"></div>
                         <div class="card-body text-center">
                             <p class="card-text"><a href="{{ issue.link }}" target="_BLANK">גליון {{ issue.issue }}</a></p>
                             <small class="text-muted">נסרק על ידי {{issue.scanned_by}}</small>
@@ -36,3 +36,8 @@ layout: page
         </div>
     </div>
 </div>
+
+
+<script>
+window.ModuleLoader.register_module('magazines_init')
+</script>

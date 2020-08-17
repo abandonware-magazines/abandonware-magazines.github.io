@@ -41,7 +41,31 @@
 
         gtag('config', 'UA-29896019-1');
         </script>
+        <script>
+        window.ModuleLoader = (function() {
+            const queue = []; 
+            const modules = {};
+            let loader = {};
 
+            loader.register_module = function (module_name) {
+                queue.push(module_name);
+            };
+
+            loader.define_module = function(module_name, module_function) {
+                modules[module_name] = module_function;
+            };
+            
+            loader.run_modules = function () { 
+                for (const module_name of queue) {
+                    modules[module_name].call();
+                }
+                
+                queue.length = 0;
+            };
+
+            return loader;
+        })();
+    </script>
     </head>
     <body>
         <div class="wrapper d-flex flex-column">
