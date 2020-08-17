@@ -55,6 +55,10 @@
     width: 100%; 
 }
 
+.magazine-card a:hover {
+    text-decoration: none;
+}
+
 body, .wrapper {
     min-height:100vh;
 }
@@ -75,7 +79,7 @@ body, .wrapper {
     overflow: hidden;
 }
 
-.magazine_is_read {
+.view_indicator {
     width: 0;
     height: 0;
     border-top: 40px solid #59de46;
@@ -84,9 +88,14 @@ body, .wrapper {
     position: absolute;
     right: 0;
     display: none;
+    color: black;
 }
 
-.magazine_is_read::after {
+.is_read .view_indicator {
+    display: block;
+}
+
+.view_indicator::after {
     content: '✓';
     position:absolute;
     top: -39px;

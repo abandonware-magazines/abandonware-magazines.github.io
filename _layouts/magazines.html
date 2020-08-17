@@ -10,26 +10,26 @@ layout: page
 </section>
 
 <div class="album py-5 bg-light">
-    <div class="container">
+    <div class="container" id="magazines_container">
 
         <div class="row">
             {% assign magazine = site.data.magazines | where:"id", page.magazine_id | first %}
             {% for issue in magazine.issues %}
-            <div class="col-md-4 mb-4 magazine-card" id="magazine_{{page.magazine_id}}_{{ issue.issue }}">
-                <div class="card mb-2 box-shadow">
-                    <a href="{{ issue.link }}" target="_BLANK">
-                        <img class="card-img-top" alt="{{ page.title }}, גליון {{ issue.issue }}"  
-                        src="/images/magazines/{{page.magazine_id}}/{{page.magazine_id}}{{ issue.issue }}.jpg">
-                    </a>
-                    
-                    <div>
-                        <div class="magazine_is_read"></div>
-                        <div class="card-body text-center">
-                            <p class="card-text"><a href="{{ issue.link }}" target="_BLANK">גליון {{ issue.issue }}</a></p>
-                            <small class="text-muted">נסרק על ידי {{issue.scanned_by}}</small>
+            <div class="col-md-4 mb-4 magazine-card" id="issue_{{ issue.issue }}">
+                <a href="{{ issue.link }}" target="_BLANK">
+                    <div class="card mb-2 box-shadow">
+                            <img class="card-img-top" alt="{{ page.title }}, גליון {{ issue.issue }}"  
+                            src="/images/magazines/{{page.magazine_id}}/{{page.magazine_id}}{{ issue.issue }}.jpg">
+                        
+                        <div>
+                            <div class="view_indicator"></div>
+                            <div class="card-body text-center">
+                                <p class="card-text">גליון {{ issue.issue }}</p>
+                                <small class="text-muted">נסרק על ידי {{issue.scanned_by}}</small>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
             {% endfor %}
 
@@ -39,5 +39,6 @@ layout: page
 
 
 <script>
-window.ModuleLoader.register_module('magazines_init')
+const js_module_init = 'magazines_init';
+const magazine_id = '{{page.magazine_id}}';
 </script>
