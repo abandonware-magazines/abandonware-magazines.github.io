@@ -2,12 +2,7 @@
 title: עמוד ראשי
 layout: default
 ---
-<!--
-<div class="cover-photo" style="background-image: url('images/CoverPhotoLarge.png')"></div>
 
-<h1>{{ page.title }}</h1>
-test
--->
 <div class="bg-cover">
     <div class="container vertical-center ">
         <div class="text-center text-white py-5 px-10 rounded-corners" id="main-box">
