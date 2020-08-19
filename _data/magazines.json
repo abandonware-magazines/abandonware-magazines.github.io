@@ -488,9 +488,54 @@
         "id": "compfun",
         "issues": [
             {
+                "issue": "1",
+                "link": "https://drive.google.com/file/d/1TdXlVi6jMYwHujei7_5_TVdWFRJrEO73/view?usp=sharing",
+                "scanned_by": "Atanvarno"
+            },
+            {
+                "issue": "3",
+                "link": "https://drive.google.com/file/d/1UuV0XSlS0fbLoMS5u3YZn_gkFCP-5h3L/view?usp=sharing",
+                "scanned_by": "Atanvarno"
+            },
+            {
+                "issue": "21",
+                "link": "https://drive.google.com/file/d/14_rml-e6ITZpMfIU-9hs5Vzd44mwgXON/view?usp=sharing",
+                "scanned_by": "Atanvarno"
+            },
+            {
+                "issue": "25",
+                "link": "https://drive.google.com/file/d/1CjIpm02HXp2IBo-n4vfmUVPrEFvZ3vjr/view?usp=sharing",
+                "scanned_by": "Atanvarno"
+            },
+            {
+                "issue": "30",
+                "link": "https://drive.google.com/file/d/1wK2W30OsjlXnd1RQ90lOZOVRlSAR9836/view?usp=sharing",
+                "scanned_by": "Atanvarno"
+            },
+            {
+                "issue": "40",
+                "link": "https://drive.google.com/file/d/1ws0hOt0mbwvqovBMWW9U1tPrUNTB8_A4/view?usp=sharing",
+                "scanned_by": "Atanvarno"
+            },
+            {
+                "issue": "45",
+                "link": "https://drive.google.com/file/d/1t_e5-J5fizIKL5dXFvt5-2GaKbL2hU4P/view?usp=sharing",
+                "scanned_by": "Atanvarno"
+            },
+            {
                 "issue": "53",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7YXZKcW15OU9QX1k/edit?usp=sharing",
                 "scanned_by": "Yaniv"
+            },
+            {
+                "issue": "55",
+                "link": "https://drive.google.com/file/d/1fOgZlBSxYSaxTB9fGjlVt-OFY8yQqGTe/view?usp=sharing",
+                "scanned_by": "Atanvarno"
+            },
+            {
+                "issue": "77",
+                "link": "https://drive.google.com/file/d/1kuFY9xoGd9nftgD5rccxQLz93xvkpzaM/view?usp=sharing",
+                "scanned_by": "Atanvarno"
             },
             {
                 "issue": "82",
@@ -506,6 +551,21 @@
                 "issue": "86",
                 "link": "https://drive.google.com/file/d/0B7AcfXJGUxB7WUV2Rjhqak1nZHc/edit?usp=sharing",
                 "scanned_by": "Yaniv"
+            },
+            {
+                "issue": "98",
+                "link": "https://drive.google.com/file/d/1dq0MhMWLKzOT72ZkhRKz29rZAukpyUay/view?usp=sharing",
+                "scanned_by": "Atanvarno"
+            },
+            {
+                "issue": "100",
+                "link": "https://drive.google.com/file/d/1puT-owobysYiNdIsvjCWWOA26ec5nPN0/view?usp=sharing",
+                "scanned_by": "Atanvarno"
+            },
+            {
+                "issue": "101",
+                "link": "https://drive.google.com/file/d/1BLEuI_-AHLvJNnWPBPFVbFdPcNc_R7KG/view?usp=sharing",
+                "scanned_by": "Atanvarno"
             }
         ]
     },
