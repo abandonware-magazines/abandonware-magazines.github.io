@@ -59,8 +59,11 @@ class ViewHistoryManager {
 }
 
 init_modules['magazines_init'] =  function() {
-    const issue_prefix = "issue_";
-    vhm = new ViewHistoryManager(magazine_id);
+    const vhm = {};
+
+    for (const magazine_id of magazine_ids.split(",")) {
+        vhm[magazine_id] = new ViewHistoryManager(magazine_id);
+    }
 
     $("#magazines_container .magazine-card").mousedown(function(e) {
         // We don't simply use "click" since it doesn't catch middle-click
@@ -69,10 +72,10 @@ init_modules['magazines_init'] =  function() {
             case 1: // Left Click
             case 2: // Middle Click
                 const obj = $(this);
-                const issue_id = obj.attr('id').replace(issue_prefix, "");
-                if (!vhm.is_viewed(issue_id))
+                const [magazine_id, issue_id] = obj.attr('id').split("_");
+                if (!vhm[magazine_id].is_viewed(issue_id))
                 {
-                    vhm.mark_as_viewed(issue_id);
+                    vhm[magazine_id].mark_as_viewed(issue_id);
                     setTimeout(function(){
                         obj.addClass("is_read");
                     }, 500);
@@ -86,14 +89,16 @@ init_modules['magazines_init'] =  function() {
         e.preventDefault();
     });
 
-    for (const issue_id of vhm.viewed_issues) {
-        $("#" + issue_prefix + issue_id).addClass("is_read");
+    for (const magazine_id in vhm) {
+        for (const issue_id of vhm[magazine_id].viewed_issues) {
+            $("#" + magazine_id + "_" + issue_id).addClass("is_read");
+        }
     }
 
-    const mark_as_unread = function(issue_id) {
-        vhm.mark_as_not_viewed(issue_id);
+    const mark_as_unread = function(magazine_id, issue_id) {
+        vhm[magazine_id].mark_as_not_viewed(issue_id);
         setTimeout(function(){
-            $("#" + issue_prefix + issue_id).removeClass("is_read");
+            $("#" + magazine_id + "_" + issue_id).removeClass("is_read");
         }, 100);
     }
 
@@ -102,8 +107,8 @@ init_modules['magazines_init'] =  function() {
         placement: 'top',
         //content: '<div class="text-center"><a href="javascript:void(0);" onclick="javascript:mark_as_unread">[הסר סימון]</a></div>',
         content: function() {
-            const issue_id = $(this).parents(".magazine-card:first").attr('id').replace(issue_prefix, "");
-            const a = $("<a href='javascript:void(0);'>[הסר סימון]</a>").click(function(){mark_as_unread(issue_id)});
+            const [magazine_id, issue_id] = $(this).parents(".magazine-card:first").attr('id').split("_");
+            const a = $("<a href='javascript:void(0);'>[הסר סימון]</a>").click(function(){mark_as_unread(magazine_id, issue_id)});
             const div = $("<div class='text-center'></div>").append(a);
             return div;
         },

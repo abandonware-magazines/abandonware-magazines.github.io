@@ -15,7 +15,7 @@ layout: page
         <div class="row">
             {% assign magazine = site.data.magazines | where:"id", page.magazine_id | first %}
             {% for issue in magazine.issues %}
-            <div class="col-md-4 mb-5 magazine-card" id="issue_{{ issue.issue }}">
+            <div class="col-md-4 mb-5 magazine-card" id="{{ page.magazine_id }}_{{ issue.issue }}">
                 <a href="{{ issue.link }}" target="_BLANK">
                     <div class="card mb-2 box-shadow">
                             <img class="card-img-top" alt="{{ page.title }}, גליון {{ issue.issue }}"  
@@ -40,5 +40,5 @@ layout: page
 
 <script>
 const js_module_init = 'magazines_init';
-const magazine_id = '{{page.magazine_id}}';
+const magazine_ids = '{{page.magazine_id}}';
 </script>
