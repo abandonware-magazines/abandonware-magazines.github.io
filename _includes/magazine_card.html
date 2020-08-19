@@ -1,0 +1,16 @@
+<div class="col-md-4 mb-5 magazine-card" id="{{ magazine.id }}_{{ issue.issue }}">
+    <a href="{{ issue.link }}" target="_BLANK">
+        <div class="card mb-2 box-shadow">
+            <img class="card-img-top" alt="{{ magazine.name }}, גליון {{ issue.issue }}"  
+                 src="/images/magazines/{{ magazine.id }}/{{ magazine.id }}{{ issue.issue }}.jpg">
+            
+            <div>
+                <div class="view_indicator"></div>
+                <div class="card-body text-center">
+                    <p class="card-text">גליון {{ issue.issue }}</p>
+                    <small class="text-muted">נסרק על ידי {{ issue.scanned_by }}</small>
+                </div>
+            </div>
+        </div>
+    </a>
+</div>

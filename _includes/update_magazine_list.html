@@ -1,0 +1,22 @@
+{% assign magazineArray = '' | split: ',' %}
+
+<div class="album py-5 bg-light">
+    <div class="container" id="magazines_container">
+        <div class="row">
+            {% for path in new_magazines %}
+                {% assign data = path | split: "/" %}
+                {% assign magazine = site.data.magazines | where:"id", data[0] | first %}
+                {% assign issue = magazine.issues | where:"issue", data[1] | first %}
+                {% assign magazineArray = magazineArray | push: data[0] %}
+                {% include magazine_card.html magazine=magazine issue=issue %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% assign uniqMagazines = magazineArray | uniq | join: "," %}
+
+<script>
+const js_module_init = 'magazines_init';
+const magazine_ids = '{{ uniqMagazines }}';
+</script>

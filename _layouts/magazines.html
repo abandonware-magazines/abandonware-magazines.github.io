@@ -15,22 +15,7 @@ layout: page
         <div class="row">
             {% assign magazine = site.data.magazines | where:"id", page.magazine_id | first %}
             {% for issue in magazine.issues %}
-            <div class="col-md-4 mb-5 magazine-card" id="{{ page.magazine_id }}_{{ issue.issue }}">
-                <a href="{{ issue.link }}" target="_BLANK">
-                    <div class="card mb-2 box-shadow">
-                            <img class="card-img-top" alt="{{ page.title }}, גליון {{ issue.issue }}"  
-                            src="/images/magazines/{{ page.magazine_id }}/{{ page.magazine_id }}{{ issue.issue }}.jpg">
-                        
-                        <div>
-                            <div class="view_indicator"></div>
-                            <div class="card-body text-center">
-                                <p class="card-text">גליון {{ issue.issue }}</p>
-                                <small class="text-muted">נסרק על ידי {{ issue.scanned_by }}</small>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
+                {% include magazine_card.html magazine=magazine issue=issue %}
             {% endfor %}
 
         </div>
