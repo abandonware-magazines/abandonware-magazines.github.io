@@ -59,6 +59,8 @@ class ViewHistoryManager {
 }
 
 init_modules['magazines_init'] =  function() {
+    $("#magazines_container img.lazyload").lazyload();
+
     const vhm = {};
 
     for (const magazine_id of magazine_ids.split(",")) {
