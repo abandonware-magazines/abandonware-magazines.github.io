@@ -5,25 +5,48 @@ function isDict(obj) {
     return (obj.constructor == Object)
 }
 
+/*
+ * Returns an array of keys which are in base_obj but not in compare_obj
+ */ 
+function objKeyDiff(base_obj, compare_obj) {
+    const res = []
+
+    Object.keys(base_obj).forEach(key => {
+        if (!(key in compare_obj)) {
+            res.push(key)
+        }
+    });
+    return res;
+}
+
 class ViewHistoryManager {
     constructor(magazine_id) {
-      this.magazine_id = magazine_id;
-      this.view_history = this.read_history();
+        this.magazine_id = magazine_id;
+        this.view_history = this._read_history();
+        const vhm = this;
+
+        $(window).bind('storage', function (e) {
+            if (e.originalEvent.key == vhm._storage_key)
+            {
+                const old_history = vhm._parse_history(e.originalEvent.oldValue);
+                const new_history = vhm._parse_history(e.originalEvent.newValue);
+                vhm.view_history = new_history;
+                const removed_entries =  objKeyDiff(old_history, new_history);
+                const added_entries =  objKeyDiff(new_history, old_history);
+                $(window).trigger( "history_changed", [vhm. magazine_id, added_entries, removed_entries ] );
+            }
+        });
     }
 
-    get storage_key() {
+    get _storage_key() {
         return "view_history_" + this.magazine_id;
     }
 
-    write_history() {
-        window.localStorage.setItem(this.storage_key,  JSON.stringify(this.view_history));
-    }
-
-    read_history() {
+    _parse_history(history) {
         let res;
 
         try {
-            res = JSON.parse(window.localStorage.getItem(this.storage_key));
+            res = JSON.parse(history);
             if (!isDict(res)) {
                 throw "Error: Expecting dictionary!";
             }
@@ -35,6 +58,14 @@ class ViewHistoryManager {
         return res;
     }
 
+    _write_history() {
+        window.localStorage.setItem(this._storage_key,  JSON.stringify(this.view_history));
+    }
+
+    _read_history() {
+        return this._parse_history(window.localStorage.getItem(this._storage_key))
+    }
+
     is_viewed(issue_id) {
         return issue_id in this.view_history;
     }
@@ -42,14 +73,14 @@ class ViewHistoryManager {
     mark_as_viewed(issue_id) {
         if (!this.is_viewed(issue_id)) {
             this.view_history[issue_id] = 1;
-            this.write_history();
+            this._write_history();
         }
     }
 
     mark_as_not_viewed(issue_id) {
         if (this.is_viewed(issue_id)) {
             delete this.view_history[issue_id];
-            this.write_history();
+            this._write_history();
         }
     }
 
@@ -91,10 +122,17 @@ init_modules['magazines_init'] =  function() {
         e.preventDefault();
     });
 
-    for (const magazine_id in vhm) {
-        for (const issue_id of vhm[magazine_id].viewed_issues) {
+    $(window).on( "history_changed", function( event, magazine_id, read_issues, unread_issues ) {
+        for (const issue_id of read_issues) {
             $("#" + magazine_id + "_" + issue_id).addClass("is_read");
         }
+        for (const issue_id of unread_issues) {
+            $("#" + magazine_id + "_" + issue_id).removeClass("is_read");
+        }
+    });
+
+    for (const magazine_id in vhm) {
+        $(window).trigger( "history_changed", [ magazine_id, vhm[magazine_id].viewed_issues, [] ] );
     }
 
     const mark_as_unread = function(magazine_id, issue_id) {
