@@ -10,6 +10,7 @@ layout: basic_page
 <ul>
     <li><a href="https://www.facebook.com/SuperMegaBit/" target="_blank">סופר מגה ביט</a> - קבוצת פייסבוק עם קטעים נבחרים מתוך מגזיני מחשב ישנים</li>
     <li><a href="https://www.facebook.com/ShimurIsrael/" target="_blank">התנועה לשימור משחקים בישראל</a></li>
+    <li><a href="https://fantasia2000.co.il/" target="_blank">פנטסיה 2000</a> - כל גליונות מגזין פנטסיה 2000 לצפייה ברשת</li>
 </ul>
 
 <p class="lead">
