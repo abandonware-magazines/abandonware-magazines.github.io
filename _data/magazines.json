@@ -1538,5 +1538,27 @@
                 "scanned_by": "Yaniv"
             }
         ]
+    },
+    {
+        "from_url": "",
+        "name": "פי סי גיימר",
+        "id": "pcgamer",
+        "issues": [
+            {
+                "issue": "1",
+                "link": "https://drive.google.com/file/d/1QMqHv_RfJyb6eb3uuWKucUTz-Wc-ofwt/view?usp=sharing",
+                "scanned_by": "Atanvarno"
+            },
+            {
+                "issue": "2",
+                "link": "https://drive.google.com/file/d/1eXCtsr17D_RIL-RYEIrC8YzXdgiQhcrs/view?usp=sharing",
+                "scanned_by": "Atanvarno"
+            },
+            {
+                "issue": "3",
+                "link": "https://drive.google.com/file/d/1sOZvyvEUYRptqQhh300UV3uNJUUldE3f/view?usp=sharing",
+                "scanned_by": "Atanvarno"
+            }
+        ]
     }
 ]
