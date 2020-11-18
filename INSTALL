@@ -1,0 +1,11 @@
+Setting up the website locally
+==============================
+
+1. Clone the repository
+
+2. Install Jekyll and Bundler according to https://jekyllrb.com/docs/installation/
+
+3. Run:
+   bundle install
+
+4. Call "./run.sh" in order to start the server
