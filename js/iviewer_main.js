@@ -113,7 +113,7 @@ async function ShowImages()
             {
                 $("#iviewer_wrapper").append('<div class="iviewer_viewer" id="iviewer_image' + index + '"></div>');
                 $("#iviewer_image" + index).iviewer({
-                    src: image.webContentLink.replace("export=download", "export=view"),
+                    src: "https://lh3.googleusercontent.com/d/" + image.id,
                     update_on_resize: false,
                     zoom_animation: false,
                     mousewheel: false,
