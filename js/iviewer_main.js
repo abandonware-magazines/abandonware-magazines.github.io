@@ -113,7 +113,7 @@ async function ShowImages()
             {
                 $("#iviewer_wrapper").append('<div class="iviewer_viewer" id="iviewer_image' + index + '"></div>');
                 $("#iviewer_image" + index).iviewer({
-                    src: image.webContentLink,
+                    src: image.webContentLink.replace("export=download", "export=view"),
                     update_on_resize: false,
                     zoom_animation: false,
                     mousewheel: false,
@@ -182,3 +182,4 @@ function loadGAPI()
 
 //https://developers.google.com/apis-explorer/?hl=en_GB#p/drive/v3/drive.files.get
 //https://developers.google.com/apis-explorer/?hl=en_GB#p/drive/v3/drive.files.list
+//https://stackoverflow.com/questions/77831632
